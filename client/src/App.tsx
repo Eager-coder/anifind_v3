@@ -99,10 +99,10 @@ const GlobalStyle = createGlobalStyle`
 	}
 	h1, h2, h3, h4 {
 		color: ${({ theme }) => theme.header};
-		transition: 0.5s;
+		transition: 2s;
 	}
 	p {
 		color: ${({ theme }) => theme.text};
-		transition: 0.5s;
+		transition: 2s;
 	}
 `

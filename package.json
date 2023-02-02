@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node dist/app.js",
-		"build": "rm -rf dist/ && tsc && cd client && yarn build",
+		"build": "rm -rf dist/ && tsc && cd client && yarn install && yarn build",
 		"build-server": "rm -rf dist/ && tsc",
 		"dev": "ts-node-dev --respawn --transpile-only src/app.ts"
 	},
