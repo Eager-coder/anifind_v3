@@ -25,6 +25,8 @@ const httpServer = app.listen(Number(process.env.HTTP_PORT), () =>
 	console.log(`Server has started on port ${process.env.HTTP_PORT}`),
 )
 
+console.log(process.env.PG_URI)
+
 const io = new Server(httpServer, {
 	cors: { credentials: true, origin: ["http://localhost:3000", "http://localhost:5207"] },
 })
